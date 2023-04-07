@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Xv6-debug-kernel",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/kernel/kernel",
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "miDebuggerServerAddress": "127.0.0.1:25000",
+        "miDebuggerPath": "/opt/riscv/bin/riscv64-unknown-elf-gdb",
+        "MIMode": "gdb",
+        "preLaunchTask": "Xv6-build",  //启动前执行task
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
