@@ -10,7 +10,7 @@
         "stopAtEntry": true,
         "cwd": "${workspaceFolder}",
         "miDebuggerServerAddress": "127.0.0.1:25000",
-        "miDebuggerPath": "/opt/riscv/bin/riscv64-unknown-elf-gdb",
+        "miDebuggerPath": "/usr/bin/riscv64-unknown-elf-gdb",
         "MIMode": "gdb",
         "preLaunchTask": "Xv6-build",  //启动前执行task
         "setupCommands": [
